@@ -25,3 +25,13 @@ aws configure
 aws sts get-caller-identity --output text --query Account
 cdk bootstrap aws://{account_id}/ap-northeast-1
 ```
+
+# CDK Deploy
+```
+cdk deploy
+```
+
+# CDK Destroy
+```
+cdk destroy
+```

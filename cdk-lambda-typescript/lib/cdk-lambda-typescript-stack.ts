@@ -12,5 +12,9 @@ export class CdkLambdaTypescriptStack extends Stack {
       runtime: aws_lambda.Runtime.NODEJS_16_X,
       handler: 'handler',
     })
+
+    const url = func.addFunctionUrl({
+      authType: aws_lambda.FunctionUrlAuthType.NONE, // 認証なし
+    })
   }
 }
